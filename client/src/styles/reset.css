@@ -1,0 +1,37 @@
+.text {
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #313537;
+	font-weight: 700;
+	-webkit-transition: color 0.3s, opacity 0.3s;
+	transition: color 0.3s, opacity 0.3s;
+	margin-bottom: 0.5em;
+}
+
+.icon {
+	width: 18%;
+	-moz-transform: scaleX(-1) rotate(-55deg);
+	-o-transform: scaleX(-1) rotate(-55deg);
+	-webkit-transform: scaleX(-1) rotate(-55deg);
+	transform: scaleX(-1) rotate(-55deg);
+	-webkit-transition: color 0.3s, opacity 0.3s;
+	transition: color 0.3s, opacity 0.3s;
+}
+
+.wrapper {
+	cursor: pointer;
+}
+
+.inner {
+	cursor: pointer;
+	border: none;
+	background-color: white;
+}
+
+.inner:hover .resetText {
+	color: #747a7e;
+}
+
+.inner:hover .resetIcon {
+	opacity: 0.6;
+}

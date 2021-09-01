@@ -1,0 +1,138 @@
+.container {
+	width: 75%;
+	padding: 3.5em 3.75em 3.5em;
+	background: #fff;
+	border: 1px solid #ddd;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0 0.4em 1.2em 0.2em rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0.4em 1.2em 0.2em rgba(0, 0, 0, 0.05);
+	margin-bottom: 12.5%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.submitButton {
+	cursor: pointer;
+	padding-left: 1em;
+	padding-right: 1em;
+	min-width: 15em;
+	max-width: 17em;
+	height: 3.5em;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	font-size: 0.7em;
+	line-height: 1.4em;
+	text-overflow: ellipsis;
+	color: #fff;
+	background-color: #747a7e;
+	border: 2px solid transparent;
+	-webkit-border-radius: 2em;
+	border-radius: 2em;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: background 0.3s, color 0.3s, opacity 0.3s;
+	transition: background 0.3s, color 0.3s, opacity 0.3s;
+	margin-top: 2em;
+}
+
+.submitButton.disabled {
+	background-color: silver;
+	cursor: default;
+}
+
+.submitButton:not(.submitButton-exit-done):hover {
+	opacity: 0.8;
+}
+
+.submitButton:focus {
+	outline: none;
+	border: none;
+}
+
+/* Submit Button animation */
+
+.submitButton-enter {
+	opacity: 1;
+	height: 3.5em;
+}
+
+.submitButton-enter-active {
+	transition: opacity 500ms;
+	height: 3.5em;
+}
+
+.submitButton-enter-done {
+	height: 3.5em;
+}
+
+.submitButton-exit {
+	opacity: 1;
+	height: 3.5em;
+	margin-top: 2em;
+}
+
+.submitButton-exit-active {
+	opacity: 0;
+	margin-top: 0;
+	border: none;
+	transition: opacity 500ms;
+}
+
+.submitButton-exit-done {
+	opacity: 0;
+	margin-top: 0;
+	cursor: default;
+}
+
+/* end - Submit Button animation */
+
+/* Feedback Block animation */
+.feedbackBlock-enter {
+	opacity: 0;
+}
+
+.feedbackBlock-enter-active {
+	opacity: 1;
+	transition: opacity 800ms;
+	transition-delay: 800ms;
+}
+
+.feedbackBlock-enter-done {
+	opacity: 1;
+}
+
+.feedbackBlock-exit {
+	opacity: 1;
+}
+
+.feedbackBlock-exit-active {
+	opacity: 0;
+	transition: opacity 300ms;
+}
+
+.feedbackBlock-exit-done {
+	opacity: 0;
+}
+
+/* end - Feedback Block animation */
+
+/* Media Queries */
+@media screen and (max-width: 850px) {
+	.container {
+		width: 90%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		padding-right: 1.75em;
+		padding-left: 1.75em;
+	}
+}
+/* end - Media Queries */
